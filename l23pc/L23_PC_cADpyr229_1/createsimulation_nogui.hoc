@@ -1,0 +1,49 @@
+//cp createsimulation.hoc createsimulation_nogui.hoc
+                                                                                 
+load_file("stdlib.hoc")
+load_file("stdrun.hoc")
+load_file("import3d.hoc")
+
+load_file("morphology.hoc")
+load_file("biophysics.hoc")
+load_file("template.hoc")
+
+//=================== creating cell object ===========================
+objref cell
+objref time, voltage
+proc create_recording() {
+    voltage = new Vector()
+    time = new Vector()
+
+    access cell.soma
+    time.record(&t, 0.1)
+    voltage.record(&v(0.5), 0.1)
+
+}
+
+//==================== stimulus settings ===========================
+
+objref step_stimulus
+
+proc create_stimulus() {
+    stepcurrent = $1
+    step_stimulus = new IClamp(0.5)
+    step_stimulus.dur = 2000
+    step_stimulus.del = 700
+    step_stimulus.amp = stepcurrent
+
+    cell.soma step_stimulus
+}
+
+//============================= saving results ============================
+
+proc save_recording() { localobj timevoltage, fh
+    timevoltage = new Matrix(time.size(), 2)
+    timevoltage.setcol(0, time)
+    timevoltage.setcol(1, voltage)
+
+    fh = new File()
+    fh.wopen("hoc_recordings/soma_voltage.dat")
+    timevoltage.fprint(0, fh, "%e ")
+    fh.close()
+}

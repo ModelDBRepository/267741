@@ -1,0 +1,33 @@
+<html>
+  <body>
+    This entry contains the scripts for genetic analyses of our article "Genetic mechanisms for impaired synaptic plasticity in schizophrenia revealed by computational modelling" <br><br>
+
+    <b>Gene-expression analysis</b><br><br>
+
+    The population-averaged SCZ-versus-HC protein concentration changes and ion-channel conductance changes are all included in the simulation scripts of folders syn and l23pc.
+    The subject-wise effects on model parameters cannot be included in this repository due to data distribution restrictions.
+    However, the raw data are freely available to anyone who registers, signs the agreement of distribution and is approved by NIMH repository & genomics resource.
+    Here, we include all the details on how to process the raw data into the factors of model parameters used in the paper.<br>
+    First, download the data and run the gene-expression analysis using the R script
+    <code>run_commonmind_normalization.R</code> for both ACC and PFC data - follow also the instructions to get the neuron-imputed data mentioned in the comments of the script.
+    Then, run the scripts <code>extract_commonmind_data_ACC.py</code> and <code>extract_commonmind_data_PFC.py</code> that analyze the data and save the subject-wise coefficients for protein concentration and ion-channel conductance parameters.<br><br>
+    
+
+    <b>Genotype-phenotype analysis</b><br><br>
+    To make the lists of SNPs in genes of interest, run the following commands:<br>
+    <code>
+    sh dofilterbegends.sh #Looks for the chromosome numbers and start and end base pairs of each gene of interest. The file ref_GRCh37.p13_top_level.gff3, which is not included in this entry due to large size but is freely available, is needed for this.<br>
+    for q in genes_new genes_new_synaptic genes_all_synaptic_PKA genes_all_synaptic_PKC genes_new_ionchannels genes_lips_synaptic_ABFGJLOQ<br>
+    do                                            #This for loop runs the SNP finder for many gene sets. It needs the file PGC3_SCZ_wave3.primary.autosome.public.v3.vcf.tsv<br>
+    python3 filter_ripke2020_v3_givenlist.py $q   #which is publicly available at the PGC website (currently, it can be downloaded at https://figshare.com/articles/dataset/scz2022/19426775).<br>
+    done                                          #This takes some 5-20 min per gene group to run.<br><br>
+
+    sh rungenes.sh                                #This is the main script for gene association analysis. However, sensitive data were used for this that are not included here. The script outputs .best files<br>
+                                                  #that contain the PRS scores for each subject - these values were correlated to the EEG indices (also sensitive data and excluded from here) and used for drawing Fig. 5.<br><br>
+
+    python3 drawcorrelations_PRS_EEGphenotype.py<br>
+    python3 drawcorrelations_PRS_EEGphenotype_suppl.py<br>
+    </code>
+  </body>
+</html>
+

@@ -1,0 +1,60 @@
+<html>
+  <body>
+    This entry contains the scripts for simulating the plasticity models of our article "Genetic mechanisms for impaired synaptic plasticity in schizophrenia revealed by computational modelling" <br><br>
+
+    The model reactions are given in NeuroRD format in Reactions.xml (also in plain text in myreacs.txt) and the initial concentrations are given in IC_singlecompartment.xml.
+    These can be used to convert the model into a NEURON RxD model using makeNeuronModelAlteredNoU.py, which results in a python file model_nrn_altered_noU.py. This is the NEURON model which will be used throughout these scripts, although
+    some scripts (named model_*.py) are somewhat altered in that they allow different naming of output files (*_extfilename*), alternative STDP stimulation protocols (*_paired*), non-zero initial concentration for additional molecules (*_smallconcs*), or
+    additional spontaneous GluR1 phosphorylation reactions (_withSpontGluRPhos.py). The files model_nrn_CaM_Ng_PKC_PPs_only_new_altered_extfilename_absconcs.py and model_nrn_CaM_Ng_PKC_only_altered_extfilename_absconcs.py are exceptional in that they include
+    only a small subset of the species and were used in fitting the neurogranin reaction rates.
+    In all simulation scripts (model_*.py), the species are labeled
+    as specs[0] ... specs[255] and reactions as reaction000 ... reaction364, and the rate coefficients are ks[0] ... ks[566] (see the comments in the generated python file to know which reaction they concern).
+    The outputs of the simulation files are .mat files containing the concentrations of each species recorded every 10s.<br><br>
+
+    To run the simulations for the Methods figure (Fig. 6, panels D-K):<br>
+    python3 drawfigcaliD-E.py <br>
+    python3 drawfigcaliF-H.py <br>
+    python3 drawfigcaliI-K.py <br><br>
+    drawfigcaliD-E.py runs a minimal model including only Ng, Ca2+, CaM and PKC, similar to the biochemical experiments of Sheu et al. 1995, and the reactions between them. In this model, the reaction rates are taken from MOO fits (fitfiles/EGTA2_alt_seed*.mat)
+    where these rates were fit to the data of Sheu et al. 1995. The script saves the files figcaliD-E_seed1_N1000_[a-n]0.eps, where figcaliD-E_seed1_N1000_b0.eps (the model with the parameters giving the best fit for the data of Fig. 6b of Sheu et al. 1995)
+    corresponds to the optimal model parameters.
+    <br><br>
+    drawfigcaliF-H.py runs a similar model as drawfigcaliD-E.py but with one of the protein phosphatases (PP1, PP2A and PP2B) present as in Seki et al. 1995. The reaction rates that produced the best fit in the experiment of drawfigcaliD-E.py are used.
+    The dephosphorylation rates are fit to the data of Seki et al. 1995. The script runs three consequtive 1-D grid searches with increasing resolution to find the dephosphorylation rates for each phosphatase separately.
+    <br><br>
+    drawfigcaliI-K.py runs three different experiments with the full model, where in the first one the degree of PKC activation in a spine with decreased Ng is quantified while the ability of AA or DAG being activated is varied. In the second one
+    the amount of PDE4 is varied to match data on relative PKA activity in control vs. PDE-blocked experiments. In the third one the amount of protein phosphatases PP1 and PP2B is varied to match the data on basal S845 phosphorylation.
+    <br><br>
+    Run times: 6 min (drawfigcaliD-E.py), 12 min (drawfigcaliF-H.py), and 20 min (drawfigcaliI-K.py) on a standard computer (single-CPU runs).
+    <br><br><br>
+
+    To run the simulations for the figures: <br>
+    #Fig. 1 <br>
+    sh runfig1.sh<br>
+    python3 drawfig1.py
+    <br><br>
+
+    #Fig. 2 <br>
+    sh runfig2.sh<br>
+    python3 drawfig2.py
+    <br><br>
+
+    #Fig. 3 <br>
+    cd ../l23pc<br>
+    sh runfig3_somaticDC.sh<br>
+    sh runfig3.sh<br>
+    cd ../syn<br>
+    sh runfig3.sh<br>
+    python3 drawfig3.py
+    <br><br>
+
+    #Fig. 4 <br>
+    sh runfig4.sh<br>
+    python3 drawfig4.py
+    <br><br>
+    The simulations of runfig1.sh, runfig2.sh, runfig3.sh and runfig4.sh take a long time to run on single CPU. In a test run, runfig4.sh took 30 hours on a single CPU, runfig1.sh took around 60 hours on single CPU, runfig2.sh took 1 day when each frequency (N=21) was given to a separate CPU. Finally, runfig3.sh is computationally the most expensive, taking several days even when distributed to several CPUs. Note that multicompartmental neuron model simulations in the folder ../l23pc have to be performed before the plasticity simulations of runfig3.sh in this folder as indicated in the code above - alternatively, the presaved data from multicompartmental neuron model simulations (in ../l23pc4/presaved.tar.gz) can be extracted.
+    <br><br>
+        
+  </body>
+</html>
+

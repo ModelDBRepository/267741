@@ -1,0 +1,365 @@
+Reaction #0: Ca + PMCA <-> PMCACa, fr=5e-05, br=0.007
+Reaction #1: PMCACa <-> PMCA + CaOut, fr=0.0035, br=0.0
+Reaction #2: Ca + NCX <-> NCXCa, fr=1.68e-05, br=0.0112
+Reaction #3: NCXCa <-> NCX + CaOut, fr=0.0056, br=0.0
+Reaction #4: CaOut + Leak <-> CaOutLeak, fr=1.5e-06, br=0.0011
+Reaction #5: CaOutLeak <-> Ca + Leak, fr=0.0011, br=0.0
+Reaction #6: Ca + Calbin <-> CalbinC, fr=2.8e-05, br=0.0196
+Reaction #7: L <-> LOut, fr=0.0005, br=0.0
+Reaction #8: L + R <-> LR, fr=5.555e-06, br=0.005
+Reaction #9: LR + Gs <-> LRGs, fr=6e-07, br=1e-06
+Reaction #10: Gs + R <-> GsR, fr=4e-08, br=3e-07
+Reaction #11: GsR + L <-> LRGs, fr=2.5e-06, br=0.0005
+Reaction #12: LRGs <-> LRGsbg + GsaGTP, fr=0.02, br=0.0
+Reaction #13: LRGsbg <-> LR + Gsbg, fr=0.08, br=0.0
+Reaction #14: LR + PKAc <-> PKAcLR, fr=8e-07, br=0.00448
+Reaction #15: PKAcLR <-> pLR + PKAc, fr=0.001, br=0.0
+Reaction #16: pLR + PKAc <-> PKAcpLR, fr=8e-07, br=0.00448
+Reaction #17: PKAcpLR <-> ppLR + PKAc, fr=0.001, br=0.0
+Reaction #18: ppLR + PKAc <-> PKAcppLR, fr=1.712e-05, br=0.00448
+Reaction #19: PKAcppLR <-> pppLR + PKAc, fr=0.001, br=0.0
+Reaction #20: pppLR + PKAc <-> PKAcpppLR, fr=0.001712, br=0.00448
+Reaction #21: PKAcpppLR <-> ppppLR + PKAc, fr=0.001, br=0.0
+Reaction #22: ppppLR + Gi <-> ppppLRGi, fr=0.00015, br=0.00025
+Reaction #23: ppppLRGi <-> ppppLRGibg + GiaGTP, fr=0.000125, br=0.0
+Reaction #24: ppppLRGibg <-> ppppLR + Gibg, fr=0.001, br=0.0
+Reaction #25: pLR <-> LR, fr=2.5e-06, br=0.0
+Reaction #26: ppLR <-> pLR, fr=2.5e-06, br=0.0
+Reaction #27: pppLR <-> ppLR, fr=2.5e-06, br=0.0
+Reaction #28: ppppLR <-> pppLR, fr=2.5e-06, br=0.0
+Reaction #29: R + PKAc <-> PKAcR, fr=4e-08, br=0.00448
+Reaction #30: PKAcR <-> pR + PKAc, fr=0.001, br=0.0
+Reaction #31: pR + PKAc <-> PKAcpR, fr=4e-07, br=0.00448
+Reaction #32: PKAcpR <-> ppR + PKAc, fr=0.001, br=0.0
+Reaction #33: ppR + PKAc <-> PKAcppR, fr=4e-06, br=0.00448
+Reaction #34: PKAcppR <-> pppR + PKAc, fr=0.001, br=0.0
+Reaction #35: pppR + PKAc <-> PKAcpppR, fr=0.0004, br=0.00448
+Reaction #36: PKAcpppR <-> ppppR + PKAc, fr=0.001, br=0.0
+Reaction #37: ppppR + Gi <-> ppppRGi, fr=7.5e-05, br=0.000125
+Reaction #38: ppppRGi <-> ppppRGibg + GiaGTP, fr=6.25e-05, br=0.0
+Reaction #39: ppppRGibg <-> ppppR + Gibg, fr=0.001, br=0.0
+Reaction #40: pR <-> R, fr=2.5e-06, br=0.0
+Reaction #41: ppR <-> pR, fr=2.5e-06, br=0.0
+Reaction #42: pppR <-> ppR, fr=2.5e-06, br=0.0
+Reaction #43: ppppR <-> pppR, fr=2.5e-06, br=0.0
+Reaction #44: GsaGTP <-> GsaGDP, fr=0.01, br=0.0
+Reaction #45: GsaGDP + Gsbg <-> Gs, fr=0.1, br=0.0
+Reaction #46: GiaGTP <-> GiaGDP, fr=0.000125, br=0.0
+Reaction #47: GiaGDP + Gibg <-> Gi, fr=0.00125, br=0.0
+Reaction #48: GsaGTP + AC1 <-> AC1GsaGTP, fr=3.85e-05, br=0.01
+Reaction #49: AC1GsaGTP + CaMCa4 <-> AC1GsaGTPCaMCa4, fr=6e-06, br=0.0009
+Reaction #50: AC1GsaGTPCaMCa4 + ATP <-> AC1GsaGTPCaMCa4ATP, fr=1e-05, br=0.07
+Reaction #51: AC1GsaGTPCaMCa4ATP <-> cAMP + AC1GsaGTPCaMCa4, fr=0.05684, br=0.0
+Reaction #52: GiaGTP + AC1GsaGTP <-> AC1GsaGTPGiaGTP, fr=6.25e-05, br=0.01
+Reaction #53: AC1GsaGTPGiaGTP + CaMCa4 <-> AC1GsaGTPGiaGTPCaMCa4, fr=6e-06, br=0.0009
+Reaction #54: AC1GsaGTPGiaGTPCaMCa4 + ATP <-> AC1GsGiCaMCa4ATP, fr=1e-05, br=0.07
+Reaction #55: AC1GsGiCaMCa4ATP <-> cAMP + AC1GsaGTPGiaGTPCaMCa4, fr=0.002842, br=0.0
+Reaction #56: GiaGTP + AC1CaMCa4 <-> AC1GiaGTPCaMCa4, fr=6.25e-05, br=0.01
+Reaction #57: AC1GiaGTPCaMCa4 + ATP <-> AC1GiaGTPCaMCa4ATP, fr=1e-05, br=0.07
+Reaction #58: AC1GiaGTPCaMCa4ATP <-> cAMP + AC1GiaGTPCaMCa4, fr=0.0005684, br=0.0
+Reaction #59: AC1 + CaMCa4 <-> AC1CaMCa4, fr=6e-06, br=0.0009
+Reaction #60: AC1CaMCa4 + ATP <-> AC1CaMCa4ATP, fr=1e-05, br=0.07
+Reaction #61: AC1CaMCa4ATP <-> cAMP + AC1CaMCa4, fr=0.005684, br=0.0
+Reaction #62: AC1GiaGTP + GsaGTP <-> AC1GsaGTPGiaGTP, fr=6.25e-05, br=0.01
+Reaction #63: AC8 + CaMCa4 <-> AC8CaMCa4, fr=1.25e-06, br=0.001
+Reaction #64: AC8CaMCa4 + ATP <-> AC8CaMCa4ATP, fr=1e-05, br=0.07
+Reaction #65: AC8CaMCa4ATP <-> cAMP + AC8CaMCa4, fr=0.002842, br=0.0
+Reaction #66: CaM + 2*Ca <-> CaMCa2, fr=1.7e-08, br=0.035
+Reaction #67: CaMCa2 + Ca <-> CaMCa3, fr=1.4e-05, br=0.228
+Reaction #68: CaMCa3 + Ca <-> CaMCa4, fr=2.6e-05, br=0.064
+Reaction #69: NgCaM + 2*Ca <-> NgCaMCa2, fr=1.58067e-08, br=1.72117
+Reaction #70: NgCaMCa2 + Ca <-> NgCaMCa3, fr=1.4e-05, br=0.228
+Reaction #71: NgCaMCa3 + Ca <-> NgCaMCa4, fr=2.6e-05, br=0.064
+Reaction #72: NgpCaM + 2*Ca <-> NgpCaMCa2, fr=1.58067e-08, br=1.72117
+Reaction #73: NgpCaMCa2 + Ca <-> NgpCaMCa3, fr=1.4e-05, br=0.228
+Reaction #74: NgpCaMCa3 + Ca <-> NgpCaMCa4, fr=2.6e-05, br=0.064
+Reaction #75: CaM + Ng <-> NgCaM, fr=2.8e-05, br=0.036
+Reaction #76: CaM + Ngp <-> NgpCaM, fr=0.0, br=0.036
+Reaction #77: CaMCa2 + Ng <-> NgCaMCa2, fr=2e-06, br=0.136
+Reaction #78: CaMCa2 + Ngp <-> NgpCaMCa2, fr=0.0, br=0.136
+Reaction #79: CaMCa3 + Ng <-> NgCaMCa3, fr=2e-06, br=0.136
+Reaction #80: CaMCa3 + Ngp <-> NgpCaMCa3, fr=0.0, br=0.136
+Reaction #81: CaMCa4 + Ng <-> NgCaMCa4, fr=2e-06, br=0.136
+Reaction #82: CaMCa4 + Ngp <-> NgpCaMCa4, fr=0.0, br=0.136
+Reaction #83: CaM + PP2B <-> PP2BCaM, fr=4.6e-07, br=1.2e-06
+Reaction #84: CaMCa2 + PP2B <-> PP2BCaMCa2, fr=4.6e-07, br=1.2e-06
+Reaction #85: CaMCa3 + PP2B <-> PP2BCaMCa3, fr=4.6e-06, br=1.2e-06
+Reaction #86: CaMCa4 + PP2B <-> PP2BCaMCa4, fr=4.6e-05, br=1.2e-06
+Reaction #87: PP2BCaM + 2*Ca <-> PP2BCaMCa2, fr=1.7e-08, br=0.035
+Reaction #88: PP2BCaMCa2 + Ca <-> PP2BCaMCa3, fr=1.4e-05, br=0.0228
+Reaction #89: PP2BCaMCa3 + Ca <-> PP2BCaMCa4, fr=2.6e-05, br=0.0064
+Reaction #90: CaMCa4 + CK <-> CKCaMCa4, fr=1e-05, br=0.003
+Reaction #91: 2*CKCaMCa4 <-> Complex, fr=1e-07, br=0.01
+Reaction #92: CKpCaMCa4 + CKCaMCa4 <-> pComplex, fr=1e-07, br=0.01
+Reaction #93: CKpCaMCa4 + Complex <-> CKpCaMCa4 + pComplex, fr=1e-07, br=0.0
+Reaction #94: CKCaMCa4 + Complex <-> CKCaMCa4 + pComplex, fr=1e-07, br=0.0
+Reaction #95: 2*Complex <-> Complex + pComplex, fr=1e-05, br=0.0
+Reaction #96: Complex + pComplex <-> 2*pComplex, fr=3e-05, br=0.0
+Reaction #97: CKpCaMCa4 <-> CaMCa4 + CKp, fr=8e-07, br=1e-05
+Reaction #98: CKp + PP1 <-> CKpPP1, fr=4e-09, br=0.00034
+Reaction #99: CKpPP1 <-> PP1 + CK, fr=8.6e-05, br=0.0
+Reaction #100: CKpCaMCa4 + PP1 <-> CKpCaMCa4PP1, fr=4e-09, br=0.00034
+Reaction #101: CKpCaMCa4PP1 <-> PP1 + CKCaMCa4, fr=8.6e-05, br=0.0
+Reaction #102: PKA + 4*cAMP <-> PKAcAMP4, fr=1.6e-15, br=6e-05
+Reaction #103: Epac1 + cAMP <-> Epac1cAMP, fr=3.1e-08, br=6.51e-05
+Reaction #104: I1 + PKAc <-> I1PKAc, fr=1.4e-06, br=0.0056
+Reaction #105: I1PKAc <-> Ip35 + PKAc, fr=0.0014, br=0.0
+Reaction #106: Ip35 + PP1 <-> Ip35PP1, fr=1e-06, br=1.1e-06
+Reaction #107: Ip35 + PP2BCaMCa4 <-> Ip35PP2BCaMCa4, fr=9.625e-05, br=0.33
+Reaction #108: Ip35PP2BCaMCa4 <-> I1 + PP2BCaMCa4, fr=0.055, br=0.0
+Reaction #109: Ip35PP1 + PP2BCaMCa4 <-> Ip35PP1PP2BCaMCa4, fr=9.625e-05, br=0.33
+Reaction #110: Ip35PP1PP2BCaMCa4 <-> I1 + PP1PP2BCaMCa4, fr=0.055, br=0.0
+Reaction #111: PP1PP2BCaMCa4 <-> PP1 + PP2BCaMCa4, fr=0.0015, br=0.0
+Reaction #112: GluR1 + PKAc <-> GluR1_PKAc, fr=4e-06, br=0.024
+Reaction #113: GluR1_PKAc <-> GluR1_S845 + PKAc, fr=0.006, br=0
+Reaction #114: GluR1 + CKCaMCa4 <-> GluR1_CKCam, fr=2.224e-08, br=0.0016
+Reaction #115: GluR1_CKCam <-> GluR1_S831 + CKCaMCa4, fr=0.0004, br=0
+Reaction #116: GluR1 + CKpCaMCa4 <-> GluR1_CKpCam, fr=2.78e-08, br=0.002
+Reaction #117: GluR1_CKpCam <-> GluR1_S831 + CKpCaMCa4, fr=0.0005, br=0
+Reaction #118: GluR1 + CKp <-> GluR1_CKp, fr=2.224e-08, br=0.0016
+Reaction #119: GluR1_CKp <-> GluR1_S831 + CKp, fr=0.0004, br=0
+Reaction #120: GluR1 + PKCtCa <-> GluR1_PKCtCa, fr=2.78e-08, br=0.002
+Reaction #121: GluR1_PKCtCa <-> GluR1_S831 + PKCtCa, fr=0.0005, br=0
+Reaction #122: GluR1 + PKCtAACa <-> GluR1_PKCtAACa, fr=2.78e-08, br=0.002
+Reaction #123: GluR1_PKCtAACa <-> GluR1_S831 + PKCtAACa, fr=0.0005, br=0
+Reaction #124: GluR1 + PKCtDAGCa <-> GluR1_PKCtDAGCa, fr=2.78e-08, br=0.002
+Reaction #125: GluR1_PKCtDAGCa <-> GluR1_S831 + PKCtDAGCa, fr=0.0005, br=0
+Reaction #126: GluR1 + PKCtAADAGCa <-> GluR1_PKCtAADAGCa, fr=2.78e-08, br=0.002
+Reaction #127: GluR1_PKCtAADAGCa <-> GluR1_S831 + PKCtAADAGCa, fr=0.0005, br=0
+Reaction #128: GluR1_S845 + CKCaMCa4 <-> GluR1_S845_CKCam, fr=2.224e-08, br=0.0016
+Reaction #129: GluR1_S845_CKCam <-> GluR1_S845_S831 + CKCaMCa4, fr=0.0004, br=0
+Reaction #130: GluR1_S845 + CKpCaMCa4 <-> GluR1_S845_CKpCam, fr=2.78e-08, br=0.002
+Reaction #131: GluR1_S845_CKpCam <-> GluR1_S845_S831 + CKpCaMCa4, fr=0.0005, br=0
+Reaction #132: GluR1_S845 + CKp <-> GluR1_S845_CKp, fr=2.224e-08, br=0.0016
+Reaction #133: GluR1_S845_CKp <-> GluR1_S845_S831 + CKp, fr=0.0004, br=0
+Reaction #134: GluR1_S845 + PKCtCa <-> GluR1_S845_PKCtCa, fr=2.78e-08, br=0.002
+Reaction #135: GluR1_S845_PKCtCa <-> GluR1_S845_S831 + PKCtCa, fr=0.0005, br=0
+Reaction #136: GluR1_S845 + PKCtAACa <-> GluR1_S845_PKCtAACa, fr=2.78e-08, br=0.002
+Reaction #137: GluR1_S845_PKCtAACa <-> GluR1_S845_S831 + PKCtAACa, fr=0.0005, br=0
+Reaction #138: GluR1_S845 + PKCtDAGCa <-> GluR1_S845_PKCtDAGCa, fr=2.78e-08, br=0.002
+Reaction #139: GluR1_S845_PKCtDAGCa <-> GluR1_S845_S831 + PKCtDAGCa, fr=0.0005, br=0
+Reaction #140: GluR1_S845 + PKCtAADAGCa <-> GluR1_S845_PKCtAADAGCa, fr=2.78e-08, br=0.002
+Reaction #141: GluR1_S845_PKCtAADAGCa <-> GluR1_S845_S831 + PKCtAADAGCa, fr=0.0005, br=0
+Reaction #142: GluR1_S831 + PKAc <-> GluR1_S831_PKAc, fr=4e-06, br=0.024
+Reaction #143: GluR1_S831_PKAc <-> GluR1_S845_S831 + PKAc, fr=0.006, br=0
+Reaction #144: GluR1_S845 + PP1 <-> GluR1_S845_PP1, fr=3e-08, br=0.00068
+Reaction #145: GluR1_S845_PP1 <-> GluR1 + PP1, fr=0.00017, br=0
+Reaction #146: GluR1_S845_S831 + PP1 <-> GluR1_S845_S831_PP1, fr=3e-08, br=0.0014
+Reaction #147: GluR1_S845_S831_PP1 <-> GluR1_S845 + PP1, fr=0.00035, br=0
+Reaction #148: GluR1_S845_S831_PP1 <-> GluR1_S831 + PP1, fr=0.00035, br=0
+Reaction #149: GluR1_S831 + PP1 <-> GluR1_S831_PP1, fr=3e-08, br=0.0014
+Reaction #150: GluR1_S831_PP1 <-> GluR1 + PP1, fr=0.00035, br=0
+Reaction #151: GluR1_S845 + PP2BCaMCa4 <-> GluR1_S845_PP2B, fr=2.01e-06, br=0.008
+Reaction #152: GluR1_S845_PP2B <-> GluR1 + PP2BCaMCa4, fr=0.002, br=0
+Reaction #153: GluR1_S845_S831 + PP2BCaMCa4 <-> GluR1_S845_S831_PP2B, fr=2.01e-06, br=0.008
+Reaction #154: GluR1_S845_S831_PP2B <-> GluR1_S831 + PP2BCaMCa4, fr=0.002, br=0
+Reaction #155: GluR1_memb + PKAc <-> GluR1_memb_PKAc, fr=4e-06, br=0.024
+Reaction #156: GluR1_memb_PKAc <-> GluR1_memb_S845 + PKAc, fr=0.006, br=0
+Reaction #157: GluR1_memb + CKCaMCa4 <-> GluR1_memb_CKCam, fr=2.224e-08, br=0.0016
+Reaction #158: GluR1_memb_CKCam <-> GluR1_memb_S831 + CKCaMCa4, fr=0.0004, br=0
+Reaction #159: GluR1_memb + CKpCaMCa4 <-> GluR1_memb_CKpCam, fr=2.78e-08, br=0.002
+Reaction #160: GluR1_memb_CKpCam <-> GluR1_memb_S831 + CKpCaMCa4, fr=0.0005, br=0
+Reaction #161: GluR1_memb + CKp <-> GluR1_memb_CKp, fr=2.224e-08, br=0.0016
+Reaction #162: GluR1_memb_CKp <-> GluR1_memb_S831 + CKp, fr=0.0004, br=0
+Reaction #163: GluR1_memb + PKCtCa <-> GluR1_memb_PKCtCa, fr=2.78e-08, br=0.002
+Reaction #164: GluR1_memb_PKCtCa <-> GluR1_memb_S831 + PKCtCa, fr=0.0005, br=0
+Reaction #165: GluR1_memb + PKCtAACa <-> GluR1_memb_PKCtAACa, fr=2.78e-08, br=0.002
+Reaction #166: GluR1_memb_PKCtAACa <-> GluR1_memb_S831 + PKCtAACa, fr=0.0005, br=0
+Reaction #167: GluR1_memb + PKCtDAGCa <-> GluR1_memb_PKCtDAGCa, fr=2.78e-08, br=0.002
+Reaction #168: GluR1_memb_PKCtDAGCa <-> GluR1_memb_S831 + PKCtDAGCa, fr=0.0005, br=0
+Reaction #169: GluR1_memb + PKCtAADAGCa <-> GluR1_memb_PKCtAADAGCa, fr=2.78e-08, br=0.002
+Reaction #170: GluR1_memb_PKCtAADAGCa <-> GluR1_memb_S831 + PKCtAADAGCa, fr=0.0005, br=0
+Reaction #171: GluR1_memb_S845 + CKCaMCa4 <-> GluR1_memb_S845_CKCam, fr=2.224e-08, br=0.0016
+Reaction #172: GluR1_memb_S845_CKCam <-> GluR1_memb_S845_S831 + CKCaMCa4, fr=0.0004, br=0
+Reaction #173: GluR1_memb_S845 + CKpCaMCa4 <-> GluR1_memb_S845_CKpCam, fr=2.78e-08, br=0.002
+Reaction #174: GluR1_memb_S845_CKpCam <-> GluR1_memb_S845_S831 + CKpCaMCa4, fr=0.0005, br=0
+Reaction #175: GluR1_memb_S845 + CKp <-> GluR1_memb_S845_CKp, fr=2.224e-08, br=0.0016
+Reaction #176: GluR1_memb_S845_CKp <-> GluR1_memb_S845_S831 + CKp, fr=0.0004, br=0
+Reaction #177: GluR1_memb_S845 + PKCtCa <-> GluR1_memb_S845_PKCtCa, fr=2.78e-08, br=0.002
+Reaction #178: GluR1_memb_S845_PKCtCa <-> GluR1_memb_S845_S831 + PKCtCa, fr=0.0005, br=0
+Reaction #179: GluR1_memb_S845 + PKCtAACa <-> GluR1_memb_S845_PKCtAACa, fr=2.78e-08, br=0.002
+Reaction #180: GluR1_memb_S845_PKCtAACa <-> GluR1_memb_S845_S831 + PKCtAACa, fr=0.0005, br=0
+Reaction #181: GluR1_memb_S845 + PKCtDAGCa <-> GluR1_memb_S845_PKCtDAGCa, fr=2.78e-08, br=0.002
+Reaction #182: GluR1_memb_S845_PKCtDAGCa <-> GluR1_memb_S845_S831 + PKCtDAGCa, fr=0.0005, br=0
+Reaction #183: GluR1_memb_S845 + PKCtAADAGCa <-> GluR1_memb_S845_PKCtAADAGCa, fr=2.78e-08, br=0.002
+Reaction #184: GluR1_memb_S845_PKCtAADAGCa <-> GluR1_memb_S845_S831 + PKCtAADAGCa, fr=0.0005, br=0
+Reaction #185: GluR1_memb_S831 + PKAc <-> GluR1_memb_S831_PKAc, fr=4e-06, br=0.024
+Reaction #186: GluR1_memb_S831_PKAc <-> GluR1_memb_S845_S831 + PKAc, fr=0.006, br=0
+Reaction #187: GluR1_memb_S845 + PP1 <-> GluR1_memb_S845_PP1, fr=3e-08, br=0.00068
+Reaction #188: GluR1_memb_S845_PP1 <-> GluR1_memb + PP1, fr=0.00017, br=0
+Reaction #189: GluR1_memb_S845_S831 + PP1 <-> GluR1_memb_S845_S831_PP1, fr=3e-08, br=0.0014
+Reaction #190: GluR1_memb_S845_S831_PP1 <-> GluR1_memb_S845 + PP1, fr=0.00035, br=0
+Reaction #191: GluR1_memb_S845_S831_PP1 <-> GluR1_memb_S831 + PP1, fr=0.00035, br=0
+Reaction #192: GluR1_memb_S831 + PP1 <-> GluR1_memb_S831_PP1, fr=3e-08, br=0.0014
+Reaction #193: GluR1_memb_S831_PP1 <-> GluR1_memb + PP1, fr=0.00035, br=0
+Reaction #194: GluR1_memb_S845 + PP2BCaMCa4 <-> GluR1_memb_S845_PP2B, fr=2.01e-06, br=0.008
+Reaction #195: GluR1_memb_S845_PP2B <-> GluR1_memb + PP2BCaMCa4, fr=0.002, br=0
+Reaction #196: GluR1_memb_S845_S831 + PP2BCaMCa4 <-> GluR1_memb_S845_S831_PP2B, fr=2.01e-06, br=0.008
+Reaction #197: GluR1_memb_S845_S831_PP2B <-> GluR1_memb_S831 + PP2BCaMCa4, fr=0.002, br=0
+Reaction #198: GluR1_memb <-> GluR1, fr=8e-07, br=0
+Reaction #199: GluR1_memb_PKAc <-> GluR1_PKAc, fr=8e-07, br=0
+Reaction #200: GluR1_memb_CKCam <-> GluR1_CKCam, fr=8e-07, br=0
+Reaction #201: GluR1_memb_CKpCam <-> GluR1_CKpCam, fr=8e-07, br=0
+Reaction #202: GluR1_memb_CKp <-> GluR1_CKp, fr=8e-07, br=0
+Reaction #203: GluR1_memb_PKCtCa <-> GluR1_PKCtCa, fr=8e-07, br=0
+Reaction #204: GluR1_memb_PKCtAACa <-> GluR1_PKCtAACa, fr=8e-07, br=0
+Reaction #205: GluR1_memb_PKCtDAGCa <-> GluR1_PKCtDAGCa, fr=8e-07, br=0
+Reaction #206: GluR1_memb_PKCtAADAGCa <-> GluR1_PKCtAADAGCa, fr=8e-07, br=0
+Reaction #207: GluR1_memb_S831 <-> GluR1_S831, fr=8e-07, br=0
+Reaction #208: GluR1_memb_S831_PKAc <-> GluR1_S831_PKAc, fr=8e-07, br=0
+Reaction #209: GluR1_memb_S831_PP1 <-> GluR1_S831_PP1, fr=8e-07, br=0
+Reaction #210: GluR1_S845 <-> GluR1_memb_S845, fr=3.28e-05, br=8e-07
+Reaction #211: GluR1_S845_CKCam <-> GluR1_memb_S845_CKCam, fr=3.28e-05, br=8e-07
+Reaction #212: GluR1_S845_CKpCam <-> GluR1_memb_S845_CKpCam, fr=3.28e-05, br=8e-07
+Reaction #213: GluR1_S845_CKp <-> GluR1_memb_S845_CKp, fr=3.28e-05, br=8e-07
+Reaction #214: GluR1_S845_PKCtCa <-> GluR1_memb_S845_PKCtCa, fr=3.28e-05, br=8e-07
+Reaction #215: GluR1_S845_PKCtAACa <-> GluR1_memb_S845_PKCtAACa, fr=3.28e-05, br=8e-07
+Reaction #216: GluR1_S845_PKCtDAGCa <-> GluR1_memb_S845_PKCtDAGCa, fr=3.28e-05, br=8e-07
+Reaction #217: GluR1_S845_PKCtAADAGCa <-> GluR1_memb_S845_PKCtAADAGCa, fr=3.28e-05, br=8e-07
+Reaction #218: GluR1_S845_S831 <-> GluR1_memb_S845_S831, fr=3.28e-05, br=8e-07
+Reaction #219: GluR1_S845_PP1 <-> GluR1_memb_S845_PP1, fr=3.28e-05, br=8e-07
+Reaction #220: GluR1_S845_S831_PP1 <-> GluR1_memb_S845_S831_PP1, fr=3.28e-05, br=8e-07
+Reaction #221: GluR1_S845_PP2B <-> GluR1_memb_S845_PP2B, fr=3.28e-05, br=8e-07
+Reaction #222: GluR1_S845_S831_PP2B <-> GluR1_memb_S845_S831_PP2B, fr=3.28e-05, br=8e-07
+Reaction #223: PDE1A + CaMCa4 <-> PDE1ACaMCa4, fr=0.0001, br=5e-05
+Reaction #224: PDE1ACaMCa4 + cAMP <-> PDE1ACaMCa4cAMP, fr=2.37e-05, br=0.664
+Reaction #225: PDE1ACaMCa4cAMP <-> PDE1ACaMCa4 + AMP, fr=0.166, br=0.0
+Reaction #226: PDE1A + PKAc <-> PDE1A_PKAc, fr=1.19e-05, br=0.004
+Reaction #227: PDE1A_PKAc <-> PDE1Ap + PKAc, fr=0.001, br=0
+Reaction #228: PDE1Ap + CaMCa4 <-> PDE1ApCaMCa4, fr=0.0001, br=0.001
+Reaction #229: PDE1ApCaMCa4 + cAMP <-> PDE1ApCaMCa4cAMP, fr=2.37e-05, br=0.664
+Reaction #230: PDE1ApCaMCa4cAMP <-> PDE1ApCaMCa4 + AMP, fr=0.166, br=0.0
+Reaction #231: PDE1Ap <-> PDE1A, fr=0.00012, br=0.0
+Reaction #232: AMP <-> ATP, fr=0.001, br=0.0
+Reaction #233: PDE4 + cAMP <-> PDE4cAMP, fr=5e-08, br=0.00016
+Reaction #234: PDE4cAMP <-> PDE4 + AMP, fr=4e-05, br=0.0
+Reaction #235: PKAc + PDE4 <-> PKAcPDE4, fr=2.5e-07, br=8e-05
+Reaction #236: PKAcPDE4 <-> PDE4p + PKAc, fr=2e-05, br=0.0
+Reaction #237: PDE4p <-> PDE4, fr=2e-05, br=0.0
+Reaction #238: PDE4p + cAMP <-> PDE4pcAMP, fr=2e-07, br=0.00064
+Reaction #239: PDE4pcAMP <-> PDE4p + AMP, fr=0.00016, br=0.0
+Reaction #240: PDE4cAMP + PKAc <-> PKAc_PDE4_cAMP, fr=2.5e-07, br=8e-05
+Reaction #241: PKAc_PDE4_cAMP <-> PDE4pcAMP + PKAc, fr=2e-05, br=0.0
+Reaction #242: PKAcAMP4 <-> PKAr + 2*PKAc, fr=0.00024, br=2.55e-05 (exp. 1)
+Reaction #243: Ca + fixedbuffer <-> fixedbufferCa, fr=0.0004, br=20.0
+Reaction #244: Glu <-> GluOut, fr=0.0005, br=0.0
+Reaction #245: Ca + PLC <-> PLCCa, fr=4e-07, br=0.001
+Reaction #246: GqaGTP + PLC <-> PLCGqaGTP, fr=7e-07, br=0.0007
+Reaction #247: Ca + PLCGqaGTP <-> PLCCaGqaGTP, fr=8e-05, br=0.04
+Reaction #248: GqaGTP + PLCCa <-> PLCCaGqaGTP, fr=0.0001, br=0.01
+Reaction #249: PLCCa + Pip2 <-> PLCCaPip2, fr=3e-08, br=0.01
+Reaction #250: PLCCaPip2 <-> PLCCaDAG + Ip3, fr=0.0003, br=0.0
+Reaction #251: PLCCaDAG <-> PLCCa + DAG, fr=0.2, br=0.0
+Reaction #252: PLCCaGqaGTP + Pip2 <-> PLCCaGqaGTPPip2, fr=1.5e-05, br=0.075
+Reaction #253: PLCCaGqaGTPPip2 <-> PLCCaGqaGTPDAG + Ip3, fr=0.25, br=0.0
+Reaction #254: PLCCaGqaGTPDAG <-> PLCCaGqaGTP + DAG, fr=1.0, br=0.0
+Reaction #255: Ip3degrad + PIkinase <-> Ip3degPIk, fr=2e-06, br=0.001
+Reaction #256: Ip3degPIk <-> PIkinase + Pip2, fr=0.001, br=0.0
+Reaction #257: PLCGqaGTP <-> PLC + GqaGTP, fr=0.012, br=0.0
+Reaction #258: PLCCaGqaGTP <-> PLCCa + GqaGTP, fr=0.012, br=0.0
+Reaction #259: GqaGTP <-> GqaGDP, fr=0.001, br=0.0
+Reaction #260: GqaGDP <-> Gqabg, fr=0.01, br=0.0
+Reaction #261: Ca + DGL <-> CaDGL, fr=0.000125, br=0.05
+Reaction #262: DAG + CaDGL <-> DAGCaDGL, fr=5e-07, br=0.001
+Reaction #263: DAGCaDGL <-> CaDGL + 2AG, fr=0.00025, br=0.0
+Reaction #264: Ip3 <-> Ip3degrad, fr=0.01, br=0.0
+Reaction #265: 2AG <-> 2AGdegrad, fr=0.005, br=0.0
+Reaction #266: DAG + DAGK <-> DAGKdag, fr=7e-08, br=0.0008
+Reaction #267: DAGKdag <-> PA + DAGK, fr=0.0002, br=0.0
+Reaction #268: Ca + PKC <-> PKCCa, fr=1.33e-05, br=0.012
+Reaction #269: PKCCa + AA <-> PKCAACa, fr=4e-06, br=0.001
+Reaction #270: PKCCa <-> PKCtCa, fr=0.0, br=0.005
+Reaction #271: PKCAACa <-> PKCtAACa, fr=0.003, br=0.005
+Reaction #272: PKCtCa + DAG <-> PKCtDAGCa, fr=8e-07, br=0.001
+Reaction #273: PKCtAACa + DAG <-> PKCtAADAGCa, fr=8e-07, br=5e-05
+Reaction #274: PKCtDAGCa + AA <-> PKCtAADAGCa, fr=4e-06, br=5e-05
+Reaction #275: PKCtCa + AA <-> PKCtAACa, fr=4e-06, br=0.001
+Reaction #276: Glu + MGluR <-> MGluR_Glu, fr=1.68e-08, br=0.0001
+Reaction #277: MGluR_Glu <-> MGluR_Glu_desens, fr=6.25e-05, br=1e-06
+Reaction #278: Gqabg + MGluR_Glu <-> MGluR_Gqabg_Glu, fr=9e-06, br=0.00136
+Reaction #279: MGluR_Gqabg_Glu <-> GqaGTP + MGluR_Glu, fr=0.0015, br=0.0
+Reaction #280: GluR2 + PKCtCa <-> GluR2_PKCtCa, fr=4e-06, br=0.0008
+Reaction #281: GluR2_PKCtCa <-> GluR2_S880 + PKCtCa, fr=0.0047, br=0
+Reaction #282: GluR2 + PKCtAACa <-> GluR2_PKCtAACa, fr=4e-06, br=0.0008
+Reaction #283: GluR2_PKCtAACa <-> GluR2_S880 + PKCtAACa, fr=0.0047, br=0
+Reaction #284: GluR2 + PKCtDAGCa <-> GluR2_PKCtDAGCa, fr=4e-06, br=0.0008
+Reaction #285: GluR2_PKCtDAGCa <-> GluR2_S880 + PKCtDAGCa, fr=0.0047, br=0
+Reaction #286: GluR2 + PKCtAADAGCa <-> GluR2_PKCtAADAGCa, fr=4e-06, br=0.0008
+Reaction #287: GluR2_PKCtAADAGCa <-> GluR2_S880 + PKCtAADAGCa, fr=0.0047, br=0
+Reaction #288: GluR2_S880 + PP2A <-> GluR2_S880_PP2A, fr=5e-07, br=0.005
+Reaction #289: GluR2_S880_PP2A <-> GluR2 + PP2A, fr=0.00015, br=0
+Reaction #290: GluR2_memb + PKCtCa <-> GluR2_memb_PKCtCa, fr=4e-06, br=0.0008
+Reaction #291: GluR2_memb_PKCtCa <-> GluR2_memb_S880 + PKCtCa, fr=0.0047, br=0
+Reaction #292: GluR2_memb + PKCtAACa <-> GluR2_memb_PKCtAACa, fr=4e-06, br=0.0008
+Reaction #293: GluR2_memb_PKCtAACa <-> GluR2_memb_S880 + PKCtAACa, fr=0.0047, br=0
+Reaction #294: GluR2_memb + PKCtDAGCa <-> GluR2_memb_PKCtDAGCa, fr=4e-06, br=0.0008
+Reaction #295: GluR2_memb_PKCtDAGCa <-> GluR2_memb_S880 + PKCtDAGCa, fr=0.0047, br=0
+Reaction #296: GluR2_memb + PKCtAADAGCa <-> GluR2_memb_PKCtAADAGCa, fr=4e-06, br=0.0008
+Reaction #297: GluR2_memb_PKCtAADAGCa <-> GluR2_memb_S880 + PKCtAADAGCa, fr=0.0047, br=0
+Reaction #298: GluR2_memb_S880 + PP2A <-> GluR2_memb_S880_PP2A, fr=5e-07, br=0.005
+Reaction #299: GluR2_memb_S880_PP2A <-> GluR2_memb + PP2A, fr=0.00015, br=0
+Reaction #300: GluR2 <-> GluR2_memb, fr=0.00024545, br=0.0003
+Reaction #301: GluR2_PKCtCa <-> GluR2_memb_PKCtCa, fr=0.00024545, br=0.0003
+Reaction #302: GluR2_PKCtAACa <-> GluR2_memb_PKCtAACa, fr=0.00024545, br=0.0003
+Reaction #303: GluR2_PKCtDAGCa <-> GluR2_memb_PKCtDAGCa, fr=0.00024545, br=0.0003
+Reaction #304: GluR2_PKCtAADAGCa <-> GluR2_memb_PKCtAADAGCa, fr=0.00024545, br=0.0003
+Reaction #305: GluR2_S880 <-> GluR2_memb_S880, fr=0.0055, br=0.07
+Reaction #306: GluR2_S880_PP2A <-> GluR2_memb_S880_PP2A, fr=0.0055, br=0.07
+Reaction #307: ACh + M1R <-> AChM1R, fr=9.5e-08, br=0.0025
+Reaction #308: Gqabg + AChM1R <-> AChM1RGq, fr=2.4e-05, br=0.00042
+Reaction #309: Gqabg + M1R <-> M1RGq, fr=5.76e-07, br=0.00042
+Reaction #310: ACh + M1RGq <-> AChM1RGq, fr=3.96e-06, br=0.0025
+Reaction #311: AChM1RGq <-> GqaGTP + AChM1R, fr=0.0005, br=0.0
+Reaction #312: ACh <-> , fr=0.0005, br=0
+Reaction #313: Ca + PLA2 <-> CaPLA2, fr=1.77e-05, br=0.154
+Reaction #314: Ca + CaPLA2 <-> Ca2PLA2, fr=1.63e-05, br=0.102
+Reaction #315: Ca2PLA2 <-> Ca2PLA2act, fr=0.0015, br=0.008
+Reaction #316: Ca2PLA2act + Pip2 <-> Ca2PLA2actPip2, fr=2.2e-05, br=0.444
+Reaction #317: Ca2PLA2actPip2 <-> Ca2PLA2act + AA, fr=0.111, br=0.0
+Reaction #318: AA <-> Pip2, fr=0.01, br=0.0
+Reaction #319: Ng + PKCtCa <-> NgPKCtCa, fr=6.772e-08, br=2.8e-09
+Reaction #320: NgPKCtCa <-> Ngp + PKCtCa, fr=1.775, br=0
+Reaction #321: NgCaM + PKCtCa <-> NgCaMPKCtCa, fr=6.772e-08, br=2.8e-09
+Reaction #322: NgCaMCa2 + PKCtCa <-> NgCaMCa2PKCtCa, fr=6.772e-08, br=2.8e-09
+Reaction #323: NgCaMCa3 + PKCtCa <-> NgCaMCa3PKCtCa, fr=6.772e-08, br=2.8e-09
+Reaction #324: NgCaMCa4 + PKCtCa <-> NgCaMCa4PKCtCa, fr=6.772e-08, br=2.8e-09
+Reaction #325: NgCaMPKCtCa <-> NgpCaM + PKCtCa, fr=7.76e-06, br=0
+Reaction #326: NgCaMCa2PKCtCa <-> NgpCaMCa2 + PKCtCa, fr=7.76e-06, br=0
+Reaction #327: NgCaMCa3PKCtCa <-> NgpCaMCa3 + PKCtCa, fr=7.76e-06, br=0
+Reaction #328: NgCaMCa4PKCtCa <-> NgpCaMCa4 + PKCtCa, fr=7.76e-06, br=0
+Reaction #329: Ng + PKCtAACa <-> NgPKCtAACa, fr=6.772e-08, br=2.8e-09
+Reaction #330: NgPKCtAACa <-> Ngp + PKCtAACa, fr=1.775, br=0
+Reaction #331: NgCaM + PKCtAACa <-> NgCaMPKCtAACa, fr=6.772e-08, br=2.8e-09
+Reaction #332: NgCaMCa2 + PKCtAACa <-> NgCaMCa2PKCtAACa, fr=6.772e-08, br=2.8e-09
+Reaction #333: NgCaMCa3 + PKCtAACa <-> NgCaMCa3PKCtAACa, fr=6.772e-08, br=2.8e-09
+Reaction #334: NgCaMCa4 + PKCtAACa <-> NgCaMCa4PKCtAACa, fr=6.772e-08, br=2.8e-09
+Reaction #335: NgCaMPKCtAACa <-> NgpCaM + PKCtAACa, fr=7.76e-06, br=0
+Reaction #336: NgCaMCa2PKCtAACa <-> NgpCaMCa2 + PKCtAACa, fr=7.76e-06, br=0
+Reaction #337: NgCaMCa3PKCtAACa <-> NgpCaMCa3 + PKCtAACa, fr=7.76e-06, br=0
+Reaction #338: NgCaMCa4PKCtAACa <-> NgpCaMCa4 + PKCtAACa, fr=7.76e-06, br=0
+Reaction #339: Ng + PKCtDAGCa <-> NgPKCtDAGCa, fr=6.772e-08, br=2.8e-09
+Reaction #340: NgPKCtDAGCa <-> Ngp + PKCtDAGCa, fr=1.775, br=0
+Reaction #341: NgCaM + PKCtDAGCa <-> NgCaMPKCtDAGCa, fr=6.772e-08, br=2.8e-09
+Reaction #342: NgCaMCa2 + PKCtDAGCa <-> NgCaMCa2PKCtDAGCa, fr=6.772e-08, br=2.8e-09
+Reaction #343: NgCaMCa3 + PKCtDAGCa <-> NgCaMCa3PKCtDAGCa, fr=6.772e-08, br=2.8e-09
+Reaction #344: NgCaMCa4 + PKCtDAGCa <-> NgCaMCa4PKCtDAGCa, fr=6.772e-08, br=2.8e-09
+Reaction #345: NgCaMPKCtDAGCa <-> NgpCaM + PKCtDAGCa, fr=7.76e-06, br=0
+Reaction #346: NgCaMCa2PKCtDAGCa <-> NgpCaMCa2 + PKCtDAGCa, fr=7.76e-06, br=0
+Reaction #347: NgCaMCa3PKCtDAGCa <-> NgpCaMCa3 + PKCtDAGCa, fr=7.76e-06, br=0
+Reaction #348: NgCaMCa4PKCtDAGCa <-> NgpCaMCa4 + PKCtDAGCa, fr=7.76e-06, br=0
+Reaction #349: Ng + PKCtAADAGCa <-> NgPKCtAADAGCa, fr=6.772e-08, br=2.8e-09
+Reaction #350: NgPKCtAADAGCa <-> Ngp + PKCtAADAGCa, fr=1.775, br=0
+Reaction #351: NgCaM + PKCtAADAGCa <-> NgCaMPKCtAADAGCa, fr=6.772e-08, br=2.8e-09
+Reaction #352: NgCaMCa2 + PKCtAADAGCa <-> NgCaMCa2PKCtAADAGCa, fr=6.772e-08, br=2.8e-09
+Reaction #353: NgCaMCa3 + PKCtAADAGCa <-> NgCaMCa3PKCtAADAGCa, fr=6.772e-08, br=2.8e-09
+Reaction #354: NgCaMCa4 + PKCtAADAGCa <-> NgCaMCa4PKCtAADAGCa, fr=6.772e-08, br=2.8e-09
+Reaction #355: NgCaMPKCtAADAGCa <-> NgpCaM + PKCtAADAGCa, fr=7.76e-06, br=0
+Reaction #356: NgCaMCa2PKCtAADAGCa <-> NgpCaMCa2 + PKCtAADAGCa, fr=7.76e-06, br=0
+Reaction #357: NgCaMCa3PKCtAADAGCa <-> NgpCaMCa3 + PKCtAADAGCa, fr=7.76e-06, br=0
+Reaction #358: NgCaMCa4PKCtAADAGCa <-> NgpCaMCa4 + PKCtAADAGCa, fr=7.76e-06, br=0
+Reaction #359: Ngp + PP1 <-> NgpPP1, fr=3.39e-09, br=0.0014
+Reaction #360: NgpPP1 <-> Ng + PP1, fr=0.00035, br=0
+Reaction #361: Ngp + PP2A <-> NgpPP2A, fr=9.099e-07, br=0.005
+Reaction #362: NgpPP2A <-> Ng + PP2A, fr=0.00015, br=0
+Reaction #363: Ngp + PP2BCaMCa4 <-> NgpPP2BCaMCa4, fr=3.4689e-07, br=0.008
+Reaction #364: NgpPP2BCaMCa4 <-> Ng + PP2BCaMCa4, fr=0.002, br=0

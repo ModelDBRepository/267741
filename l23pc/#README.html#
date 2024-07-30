@@ -1,0 +1,22 @@
+<html><body>
+This entry contains the scripts for simulating the layer II/III pyramidal cell model for the STDP experiment of our article "Genetic mechanisms for impaired synaptic plasticity in schizophrenia revealed by computational modelling" <br><br>
+
+Scripts used for the multi-compartmental NEURON simulations in order to determine the Ca2+ currents through NMDA-receptor channels when the timing between pre- and post-synaptic
+stimulation is varied. The mod mechanisms and hoc files are from the NMC portal: https://bbp.epfl.ch/nmc-portal/
+
+Scripts adapted by Tuomo Maki-Marttunen 2018-2023 from simulation scripts at https://bbp.epfl.ch/nmc-portal/microcircuit#/metype/L23_PC_cADpyr/details (CC BY-NC-SA 4.0)
+
+To run the simulations needed for Fig. 3, do the following:
+
+nrnivmodl mechanisms #This compliles the ion channel mechanisms
+
+#This runs the simulations of somatic DC stimulation for 1) control neuron, 2) neuron with varied alteration of single ion channel conductances, and 3) neuron with varied alteration of combinations of ion channel conductances.
+#Takes a few hours altogether.
+sh runfig3_somaticDC.sh
+
+#This runs the simulations of STDP protocol with different pre-post intervals and records the Ca2+ fluxes to the post-synaptic spine for 1) control neuron, 2) neuron with varied alteration of single ion channel conductances,
+#and 3) neuron with varied alteration of combinations of ion channel conductances.
+#This is a heavy operation, as there are 532 data files that will be generated, each requiring 200 repetitions of a simulation lasting a few seconds - doing all simulations took me around 12 hours per ISI value. This can be omitted by using the pre-saved data files (in presaved.tar.gz).
+sh runfig3.sh 
+
+</body></html>
