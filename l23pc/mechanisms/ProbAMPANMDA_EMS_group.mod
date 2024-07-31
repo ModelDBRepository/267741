@@ -108,12 +108,18 @@ VERBATIM
 #include<stdio.h>
 #include<math.h>
 
+#ifndef NRN_VERSION_GTEQ_8_2_0
 double nrn_random_pick(void* r);
 void* nrn_random_arg(int argpos);
+#define RANDCAST
+#else
+#define RANDCAST (Rand*)
+#endif
 
 extern int ifarg(int iarg);
-extern int vector_capacity(void* vv);
-extern void* vector_arg(int iarg);
+extern int vector_capacity(IvocVect* vv);
+extern IvocVect* vector_arg(int iarg);
+
 ENDVERBATIM
   
 
@@ -330,7 +336,7 @@ VERBATIM
                 : each instance. However, the corresponding hoc Random
                 : distribution MUST be set to Random.negexp(1)
                 */
-                value = nrn_random_pick(_p_rng);
+                value = nrn_random_pick(RANDCAST _p_rng);
                 //printf("random stream for this simulation = %lf\n",value);
                 return value;
         }else{
@@ -339,7 +345,7 @@ ENDVERBATIM
                 : independent of nhost or which host this instance is on
                 : is desired, since each instance on this cpu draws from
                 : the same stream
-                value = scop_random(1)
+                value = scop_random()
 VERBATIM
         }
 ENDVERBATIM
@@ -353,9 +359,9 @@ FUNCTION toggleVerbose() {
 PROCEDURE setVec() {    : Sets the number of synapses. This should be done only once for each ProbAMPANMDA2_EMS_group,
                         : before the running of the simulation, and the underlying vector should be untouched after that.
   VERBATIM
-  void** vv;
-  vv = (void**)(&space);
-  *vv = (void*)0;
+  IvocVect** vv;
+  vv = (IvocVect**)(&space);
+  *vv = (IvocVect*)0;
   if (ifarg(1)) {
     *vv = vector_arg(1);
     Nsyns = vector_capacity(*vv)/3;

@@ -51,12 +51,18 @@ VERBATIM
 #include<stdio.h>
 #include<math.h>
 
+#ifndef NRN_VERSION_GTEQ_8_2_0
 double nrn_random_pick(void* r);
 void* nrn_random_arg(int argpos);
+#define RANDCAST
+#else
+#define RANDCAST (Rand*)
+#endif
 
 extern int ifarg(int iarg);
-extern int vector_capacity(void* vv);
-extern void* vector_arg(int iarg);
+extern int vector_capacity(IvocVect* vv);
+extern IvocVect* vector_arg(int iarg);
+
 ENDVERBATIM
   
 
@@ -229,7 +235,7 @@ VERBATIM
                 : each instance. However, the corresponding hoc Random
                 : distribution MUST be set to Random.negexp(1)
                 */
-                value = nrn_random_pick(_p_rng);
+                value = nrn_random_pick(RANDCAST _p_rng);
 		        //fi = fopen("RandomStreamMCellRan4.txt", "w");
                 //fprintf(fi,"random stream for this simulation = %lf\n",value);
                 //printf("random stream for this simulation = %lf\n",value);
@@ -252,9 +258,9 @@ ENDVERBATIM
 PROCEDURE setVec() {    : Sets the times of firing of each synapse. This should be done only once for each ProbAMPANMDA2group,
                         : before the running of the simulation, and the underlying vector should be untouched after that.
   VERBATIM
-  void** vv;
-  vv = (void**)(&space);
-  *vv = (void*)0;
+  IvocVect** vv;
+  vv = (IvocVect**)(&space);
+  *vv = (IvocVect*)0;
   if (ifarg(1)) {
     *vv = vector_arg(1);
     Nsyns = vector_capacity(*vv)/3;
@@ -263,9 +269,9 @@ PROCEDURE setVec() {    : Sets the times of firing of each synapse. This should 
 }
 PROCEDURE setVec2() {    : Sets the IDs of the synapses to fire
   VERBATIM
-  void** vv;
-  vv = (void**)(&space2);
-  *vv = (void*)0;
+  IvocVect** vv;
+  vv = (IvocVect**)(&space2);
+  *vv = (IvocVect*)0;
   if (ifarg(1)) {
     *vv = vector_arg(1);
     Nevents = vector_capacity(*vv);
