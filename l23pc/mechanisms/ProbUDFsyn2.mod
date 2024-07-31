@@ -43,8 +43,13 @@ VERBATIM
 #include<stdio.h>
 #include<math.h>
 
+#ifndef NRN_VERSION_GTEQ_8_2_0
 double nrn_random_pick(void* r);
 void* nrn_random_arg(int argpos);
+#define RANDCAST
+#else
+#define RANDCAST (Rand*)
+#endif
 
 ENDVERBATIM
   
@@ -155,7 +160,7 @@ VERBATIM
                 : each instance. However, the corresponding hoc Random
                 : distribution MUST be set to Random.negexp(1)
                 */
-                value = nrn_random_pick(_p_rng);
+                value = nrn_random_pick(RANDCAST _p_rng);
 		        //fi = fopen("RandomStreamMCellRan4.txt", "w");
                 //fprintf(fi,"random stream for this simulation = %lf\n",value);
                 //printf("random stream for this simulation = %lf\n",value);
